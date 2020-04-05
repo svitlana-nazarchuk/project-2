@@ -83,6 +83,7 @@ def loadGlobal():
     
     data=[]
     i=0
+    
     global nycData_jan
     for trip in trips:    
         if (i>=100000): 
@@ -103,7 +104,7 @@ def loadGlobal():
     for trip in trips:    
         if (i>=100000): 
             break
-        data.append({'duration':trip['tripduration'], 'gender':trip['gender'], 'birth_year':trip['birth year']})  
+        data.append({'duration':trip['tripduration'], 'gender':trip['gender'], 'birth_year':trip['birth year'], 'usertype':trip['usertype']})  
         i=i+1
     
     nycData_feb=data
